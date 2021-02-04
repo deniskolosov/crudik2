@@ -1,0 +1,16 @@
+{:source-paths ["src"]
+ :dependencies [[binaryage/devtools "1.0.2"]
+                [cider/cider-nrepl "0.25.5"]
+                [reagent "1.0.0"]
+                [re-frame "1.1.2"]
+                [day8.re-frame/re-frame-10x "0.7.0"]
+                [day8.re-frame/http-fx "0.1.6"]
+                [reagent "1.0.0"]]
+ :builds       {:app {:target     :browser
+                      :output-dir "public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [crudik2.core]}}
+                      :devtools   {:after-load crudik2.core/mount-root}}}
+
+ :dev-http     {3000 {:root    "public"
+                      :handler user/app}}}
