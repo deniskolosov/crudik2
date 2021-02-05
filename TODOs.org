@@ -1,2 +1,38 @@
+* General structure
+  - [X] Describe general app structure
+    Application consists of simple table of patients with ability to add, edit and delete patients.
+    
+    For adding patients there should be a "+" button, which opens a modal with form group containing 
+    patients' data: Name, Surname, Birthdate, Insurance Number.
+
+    After adding the first patient, data is displayed as a table with all the above fields and "edit" button.
+    After button is clicked, editing modal appears, with all the fields prepopulated with current data.
+    There is also a delete button which allows to delete a patient.
+    After saving, table is updated accordingly
+    
+* Create db file
+  - [X] Come up with a structure
+    app db has a following structure
+    #+begin_src clojurescript
+      {:patients {<patient-id> {:name <name>
+                                :surname <surname>
+                                :birthdate <birthdate>
+                                :insurance-no <insurance-no>}}}
+
+    #+end_src
+    
+  - [X] Create db file
+    
 * Markup
-  * todo
+  - [ ] Display basic table with patients
+  - [ ] Add edit and add button
+  - [ ] Add styles
+
+
+* Modals
+  - [ ] Create form group for adding and deleting patients
+  - [ ] Show modal with form group on button press
+
+    
+* Reframe subs and events
+  - [ ] Add subs and events for correct db updates
