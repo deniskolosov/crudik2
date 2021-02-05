@@ -1,19 +1,12 @@
 (ns crudik2.core
     (:require
       [reagent.core :as r]
-      [reagent.dom :as d]))
+      [reagent.dom :as d]
+      [crudik2.patients.views.patients-page :refer [patients-page]]))
 
-;; -------------------------
-;; Views
-
-(defn home-page []
-  [:div [:h2 "Hello there!"]])
-
-;; -------------------------
-;; Initialize app
 
 (defn mount-root []
-  (d/render [home-page] (.getElementById js/document "app")))
+  (d/render [patients-page] (.getElementById js/document "app")))
 
 (defn ^:export init! []
   (mount-root))

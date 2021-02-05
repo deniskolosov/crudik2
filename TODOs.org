@@ -25,6 +25,7 @@
     
 * Markup
   - [ ] Display basic table with patients
+    - [ ] Create subscription for :patients field
   - [ ] Add edit and add button
   - [ ] Add styles
 
