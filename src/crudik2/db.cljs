@@ -1,4 +1,4 @@
-(ns app.db
+(ns crudik2.db
   (:require [re-frame.core :as rf]))
 
 
@@ -13,4 +13,10 @@
                                 3 {:name "Sidor"
                                    :surname "Sidorov"
                                    :birthdate "1992-12-12"
-                                   :insurance-no "F3O5O3B3A7R"}}})
+                                   :insurance-no "F3O5O3B3A7R"}}
+                     :active-modal nil})
+
+(rf/reg-event-db
+ :initialize-db
+ (fn [_ _]
+   initial-app-db))

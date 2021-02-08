@@ -24,16 +24,23 @@
   - [X] Create db file
     
 * Markup
-  - [ ] Display basic table with patients
-    - [ ] Create subscription for :patients field
-  - [ ] Add edit and add button
+  - [X] Display basic table with patients
+    - [X] Create subscription for :patients field
+  - [X] Add edit and add button
+    - [X]  "Edit" button
+    - [X] "Add" Button
   - [ ] Add styles
 
 
 * Modals
+  - [-] Show modal with form group on button press
+    - [X] Show modal
+    - [ ] Add form group to modal
   - [ ] Create form group for adding and deleting patients
-  - [ ] Show modal with form group on button press
 
     
 * Reframe subs and events
-  - [ ] Add subs and events for correct db updates
+  - [-] Add subs and events for correct db updates
+    - [X] Subs and events for modals
+    - [X] Sub for displaying patients
+    - [ ] Events for updating patients 

@@ -10,7 +10,12 @@
                       :output-dir "public/js"
                       :asset-path "/js"
                       :modules    {:app {:entries [crudik2.core]}}
-                      :devtools   {:after-load crudik2.core/mount-root}}}
+                      :compiler-options {:closure-defines {re-frame.trace/trace-enabled? true
+                                                           day8.re-frame.tracing/trace-enabled? true}}
+                      :devtools   {:after-load crudik2.core/mount-root
+                                   :http-root   "public"
+                                   :http-port   3000
+                                   :preloads    [day8.re-frame-10x.preload]}}}
 
  :dev-http     {3000 {:root    "public"
                       :handler user/app}}}
