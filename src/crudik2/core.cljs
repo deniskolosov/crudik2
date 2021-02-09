@@ -4,6 +4,7 @@
       [re-frame.core :as rf]
       [reagent.dom :as d]
       [crudik2.patients.subs]
+      [crudik2.patients.events]
       [crudik2.db]
       [crudik2.subs]
       [crudik2.events]
